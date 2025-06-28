@@ -5,7 +5,7 @@ The goal is to allow for a full page, already setup wrapper which easily allows 
 
 to use this, first download and add the file to your project.
 
-use class `gd` on your <main> tag to use it for the whole page
+use class `gd` on your `<main>` to use it for the whole page
 
 use class `gd-breakout` to allow content to expand slightly
 
