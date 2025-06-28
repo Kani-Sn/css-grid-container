@@ -1,7 +1,7 @@
 .gd {
-  --padding-inline: 1rem;
-  --content-max-width: 900px;
-  --breakout-max-width: 1200px;
+  --padding-inline: 8px;
+  --content-max-width: 1200px;
+  --breakout-max-width: 1500px;
 
   --breakout-size: calc(
     (var(--breakout-max-width) - var(--content-max-width)) / 2
@@ -29,7 +29,11 @@
   grid-column: breakout;
 }
 
-.gd > .gd-full-width {
+.gd > .gd-content-full-width{
+  grid-column: full-width;
+}
+
+.gd > .gd-bg-full-width {
   grid-column: full-width;
 
   display: grid;
