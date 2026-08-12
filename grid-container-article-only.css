@@ -1,0 +1,20 @@
+/**
+* This allows the article to have a full width background while the content inside only goes up to a maximum size.
+* "--num-s" and "--inline-size" are global variables in my project, but I added them here for clarity.
+*/
+
+article {
+  --num-s: 8px;
+  --inline-size: 1200px;
+  
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(var(--num-s), 1fr)
+    [content-start] min(100% - (var(--num-s) * 2), var(--inline-size))
+    [content-end]
+    minmax(var(--num-s), 1fr) [full-width-end];
+
+  > * {
+    grid-column: content;
+  }
+}
